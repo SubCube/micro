@@ -5,11 +5,15 @@ module.exports = {
       libraryTarget: 'system'
         },
         devServer: {
-          port: 5056
-      }
+          disableHostCheck: true,
+            port: 5056,
+            public: '0.0.0.0:5056'
+        },
+
   },
   transpileDependencies: [
     'vuetify'
     ],
+  publicPath: "/"
 
 }
