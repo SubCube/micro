@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import singleSpaVue from 'single-spa-vue';
 
+import vuetify from './plugins/vuetify'
+
 import App from './App.vue';
 
 Vue.config.productionTip = false;
@@ -22,6 +24,7 @@ const vueLifecycles = singleSpaVue({
         },
       });
     },
+    vuetify
   },
 });
 

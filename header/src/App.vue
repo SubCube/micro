@@ -2,6 +2,9 @@
   <div id="app">
   <div class="content">
    <h1>{{ msg }}</h1>
+   <h2>vue2 counter {{ counter }}</h2>
+   <button @click="increment">vue 2</button>
+   <v-btn>Vuetify</v-btn>
   </div>
   </div>
 </template>
@@ -12,9 +15,15 @@ export default {
   name: 'App',
   data(){
     return{
-      msg: 'VUE 2'
+      msg: 'VUE 2',
+      counter: 0
     }
   },
+  methods: {
+    increment() {
+      this.counter++
+    }
+  }
 }
 </script>
 

@@ -1,12 +1,13 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <h2>vue3</h2>
+  <h2>vue3 </h2>
   <TestComponent/>
+  <v-btn>Test</v-btn>
 </template>
 
 <script lang="ts" setup>
 
-import HelloWorld from './components/HelloWorld.vue';
+
 import TestComponent from './components/TestComponent.vue'
 
 </script>
